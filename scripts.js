@@ -26,7 +26,7 @@ Player.prototype.confirmFirstServe = function () {
 	name = this.lastName;
 // Чтобы не исчезала вся информация со страницы
 //	setTimeout(function() {
-	var choice = confirm("Первым подает " + name + "?");
+	var choice = confirm("Первым подает " + name + "?" + "\n[1.09.2019 23:52]");
 	return choice;
 //	}, 20);
 };
@@ -175,7 +175,7 @@ Player.prototype.showServe = function () {
 			speech.addEventListener("play", function() { // "playing" работает так же
 				setTimeout(function() {
 					speech.pause();
-				}, lengtnNum[num] + 300 );				
+				}, lengtnNum[num] + 500 );				
 			}, true);
 		return true;
 		};
@@ -184,12 +184,12 @@ Player.prototype.showServe = function () {
 			numSay(game.scoreA);
 			setTimeout(function() {
 				numSay(game.scoreB);
-			}, lengtnNum[game.scoreA] + 500 + say.pause);
+			}, lengtnNum[game.scoreA] + 1000 + say.pause);
 		} else {
 			numSay(game.scoreB);
 			setTimeout(function() {
 				numSay(game.scoreA);
-			}, lengtnNum[game.scoreB] + 500 + say.pause);
+			}, lengtnNum[game.scoreB] + 1000 + say.pause);
 		}
 	
 	};	
