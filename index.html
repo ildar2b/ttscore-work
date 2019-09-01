@@ -35,7 +35,7 @@
   <p id="date">дата.
   <p>&nbsp;
   <p id="info">Подачу выбрал...
-  <p>[1.09.2019 9:55]
+  <p>[1.09.2019 10:03]
   <p>&nbsp;
   <p>&nbsp;
   <p>&nbsp;
@@ -125,13 +125,10 @@
 	// Начать встречу, сказав "Love all" / "Ноль ноль"
 	$("#speechLoad").click(function() {
 		var speech = document.getElementById('speechFile');
-		speech.currentTime = 0;
-/*
 		speech.play();
 		setTimeout(function() {
 			speech.pause();
-		}, 2000);
-*/		
+		}, 500);
 	});
 	
 	$("#scoreSay").click(function() {
