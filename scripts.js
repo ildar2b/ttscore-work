@@ -167,7 +167,7 @@ Player.prototype.showServe = function () {
 			if (num === 0) {
 				speech.currentTime = 1;
 			} else {
-				speech.currentTime = num * 2 + 40;
+				speech.currentTime = num * 2 + 20;
 			}
 			speech.addEventListener("seeked", function() {
 				speech.play();
