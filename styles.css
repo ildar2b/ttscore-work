@@ -1,0 +1,108 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b,
+u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th,
+td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;					/* обнул€ем отступы и убираем бордюры	*/
+	vertical-align: baseline;	/* приводим все к одной базовой линии	*/
+	background: transparent;	/* чтобы не проскакивали левые фоны,	*/
+								/* установленные по умолчанию			*/
+	font-size: 100%;			/* размер шрифта всем одинаковый		*/
+}
+a {								/* ссылка не в общем списке, чтобы		*/
+								/* не сбрасывать outline по умолчанию	*/
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {							/* устраняем отступы между ячейками таблицы			*/
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;		/* возвращаем привычное вертикальное выравнивание	*/
+} 
+input, select, button, textarea {
+	margin: 0; 					/* убираем отступы по умолчанию дл€ элементов форм	*/
+								/* (в частности дл€ checkbox и radio)				*/
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым			*/
+	outline: none;
+}
+
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов */
+								/* относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%;		/* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #404040;
+	text-align: left;
+	font-size: 1em;			/* используем безопасные шрифтовые CSS стеки */
+	min-height: 100%;
+	background: #f9f9f9;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+/* --------------- /базовые настройки ---------*/
+
+header {
+	background: url(source/pictures/background.jpg) center no-repeat;
+	background-size: cover; /* растягивание картинки на всю ширину */
+	color: #fff;
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+}
+	header > h1 {
+		font-size:		6em;
+		margin-top: 	0px;
+		margin-bottom:	0px;
+	}
+	
+	header > h2 {
+		font-size: 1.5em;
+		text-align: left;
+	}
+	
+	header > h3 {
+		font-size: 1em;
+		text-align: left;
+	}
+	
+	header > p {
+		font-size: 0.8em;
+		text-align: right;
+	}
+
+
+
