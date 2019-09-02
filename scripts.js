@@ -25,7 +25,7 @@ var Player = function (lastName, firstName, ttwRating, nickName) {
 Player.prototype.confirmFirstServe = function () {
 // Чтобы не исчезала вся информация со страницы
 //	setTimeout(function() {
-	var	choice = confirm("Первым подает " + this.lastName + "?" + "\n[2.09.2019 14:49]");
+	var	choice = confirm("Первым подает " + this.lastName + "?" + "\n[2.09.2019 14:59]");
 //	}, 20);
 };
 
