@@ -30,7 +30,7 @@ Player.prototype.confirmFirstServe = function () {
 	var choice = "-";
 	console.log(choice);
 
-	choice = confirm("Первым подает " + name + "?" + "\n[2.09.2019 13:38]");
+	choice = confirm("Первым подает " + name + "?" + "\n[2.09.2019 13:40]");
 	console.log(choice);
 
 if (choice !== "-") {	
