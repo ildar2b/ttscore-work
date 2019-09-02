@@ -26,7 +26,7 @@ Player.prototype.confirmFirstServe = function () {
 	name = this.lastName;
 // Чтобы не исчезала вся информация со страницы
 //	setTimeout(function() {
-	var choice = confirm("Первым подает " + name + "?" + "\n[2.09.2019 12:08]");
+	var choice = confirm("Первым подает " + name + "?" + "\n[2.09.2019 12:20]");
 	return choice;
 //	}, 20);
 };
