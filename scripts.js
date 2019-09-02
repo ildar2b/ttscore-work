@@ -273,7 +273,6 @@ Game.prototype.winner = function(player) {
 	if ( (game.scoreA >= 11 || game.scoreB >= 11) && diffScore > 1 ) {
 		
 		setTimeout( function() {
-			
 			match.gameWinner(player);
 			match.winner(player);
 			if (match.isOver) {
@@ -294,7 +293,7 @@ Game.prototype.winner = function(player) {
 				match.isOver = true;
 				alert("Закройте вкладку браузера, чтобы завершить работу.");
 			}
-		}, 3000);
+		}, 4000);
 	}
 };
 
