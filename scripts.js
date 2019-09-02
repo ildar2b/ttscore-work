@@ -293,7 +293,7 @@ Game.prototype.winner = function(player) {
 				match.isOver = true;
 				alert("Закройте вкладку браузера, чтобы завершить работу.");
 			}
-		}, 4000);
+		}, 3000);
 	}
 };
 
