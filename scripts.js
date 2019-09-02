@@ -25,7 +25,7 @@ var Player = function (lastName, firstName, ttwRating, nickName) {
 Player.prototype.confirmFirstServe = function () {
 // Чтобы не исчезала вся информация со страницы
 //	setTimeout(function() {
-	var	choice = confirm("Первым подает " + this.lastName + "?" + "\n[2.09.2019 15:05]");
+	var	choice = confirm("Первым подает " + this.lastName + "?" + "\n[2.09.2019 15:35]");
 //	}, 20);
 };
 
@@ -185,7 +185,7 @@ Player.prototype.showServe = function () {
 			speech.addEventListener("play", function() { // "playing" работает так же
 				setTimeout(function() {
 					speech.pause();
-				}, lengtnNum[num] + 400 );				
+				}, lengtnNum[num] + 500 );				
 			}, true);
 		return true;
 		};
@@ -194,12 +194,12 @@ Player.prototype.showServe = function () {
 			numSay(game.scoreA);
 			setTimeout(function() {
 				numSay(game.scoreB);
-			}, lengtnNum[game.scoreA] + 600 + say.pause);
+			}, lengtnNum[game.scoreA] + 1000 + say.pause);
 		} else {
 			numSay(game.scoreB);
 			setTimeout(function() {
 				numSay(game.scoreA);
-			}, lengtnNum[game.scoreB] + 600 + say.pause);
+			}, lengtnNum[game.scoreB] + 1000 + say.pause);
 		}
 	
 	};	
