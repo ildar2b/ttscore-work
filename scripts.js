@@ -185,7 +185,7 @@ Player.prototype.showServe = function () {
 			speech.addEventListener("play", function() { // "playing" работает так же
 				setTimeout(function() {
 					speech.pause();
-				}, lengtnNum[num] + 200 );				
+				}, lengtnNum[num] + 300 );				
 			}, true);
 		return true;
 		};
